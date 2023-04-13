@@ -20,6 +20,47 @@
     width: 200px;
 }
 
+/* Adapt-menu */
+.adapt-menu__trigger {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    display: none;
+}
+
+.adapt-menu__trigger--close {
+    color: #FAC0AA;
+    margin: 0px 0px 20px 0px;
+    display: block;
+}
+
+.adapt-menu {
+    max-width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    display: none;
+    box-shadow: 0px 0px 17px 0px #000000;
+}
+
+.adapt-menu__list {
+    padding: 50px;
+}
+
+.adapt-menu__item {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 .navbar__list {
     margin: 0 auto;
     display: flex;
@@ -45,12 +86,12 @@
 .main-text__title {
     max-width: 700px;
     font-family: 'Roboto';
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.main_text__description {
+.main-text__description {
     margin-top: 30px;
     max-width: 500px;
     font-family: 'Roboto';
@@ -62,6 +103,7 @@
 .sign {
     margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
 }
@@ -94,30 +136,6 @@
     color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Modals */
 .popup--open {
     overflow: hidden;
@@ -128,7 +146,7 @@
     display: none;
     background-color: #ffffff;
     position: fixed;
-    z-index: 9999;
+    z-index: 2;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -190,10 +208,10 @@
     color: #ffffff;
 }
 
-.modal-overlay {
+.overlay {
     display: none;
     position: fixed;
-    z-index: 9998;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -206,7 +224,7 @@
     display: none;
     background-color: #ffffff;
     position: fixed;
-    z-index: 9999;
+    z-index: 2;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -223,4 +241,14 @@
     font-size: 24px;
     font-weight: 400;
     color: #000000;
+}
+
+@media screen and (max-width: 715px) {
+    .navbar__list {
+        display: none;
+    }
+
+    .adapt-menu__trigger {
+        display: block;
+    }
 }

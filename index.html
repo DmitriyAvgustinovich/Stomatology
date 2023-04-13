@@ -1,73 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <link rel="stylesheet" href="src/assets/css/style.css">
   <link rel="stylesheet" href="src/assets/css/video.css">
+  <script src="src/js/main.js" type="module" defer></script>
 </head>
 
 <body>
 
-  <main class="main">
-    <div class="main__wrapper">
+  <main class="main main__wrapper">
+    <nav class="navbar navbar__wrapper">
 
-      <nav class="navbar">
-        <div class="navbar__wrapper">
+      <img class="navbar__logo" src="src/assets/img/logo.png" alt="">
 
-          <img class="navbar__logo" src="src/assets/img/logo.png" alt="">
-          <div class="navbar__list">
-            <a class="navbar__list-item navbar__list-item--active" href="">О клинике</a>
-            <a class="navbar__list-item" href="">Акции</a>
-            <a class="navbar__list-item" href="">Цены</a>
-          </div>
+      <!-- Adapt-menu -->
+      <a class="adapt-menu__trigger" href="">☰</a>
 
-        </div>
-      </nav>
+      <div class="adapt-menu">
+        <div class="adapt-menu__list">
 
-      <section class="main-text">
-        <div class="main-text__wrapper">
+          <a class="adapt-menu__trigger adapt-menu__trigger--close">☰</a>
 
-          <h1 class="main-text__title">Доверьте свою улыбку профессионалам! </h1>
-          <p class="main_text__description">Представляем первую в Самаре авторскую клинику
-            эстетической стоматологии и косметологии
-            Екатерины Паравиной.</p>
-
-          <div class="sign">
-            <button class="sign__btn">Записаться</button>
-
-            <div class="video-about">
-              <a class="video-about__btn">
-                <img class="video-about__img" src="src/assets/img/watch-video-icon.png" alt="">
-              </a>
-
-              <p class="video-about__text">Смотреть видео о нас</p>
-            </div>
-          </div>
+          <a href="" class="adapt-menu__item">О клинике</a>
+          <a href="" class="adapt-menu__item">Акции</a>
+          <a href="" class="adapt-menu__item">Цены</a>
 
         </div>
-      </section>
+      </div>
 
-    </div>
+
+      <div class="navbar__list">
+        <a class="navbar__list-item navbar__list-item--active" href="">О клинике</a>
+        <a class="navbar__list-item" href="">Акции</a>
+        <a class="navbar__list-item" href="">Цены</a>
+      </div>
+    </nav>
+
+    <section class="main-text main-text__wrapper">
+      <h2 class="main-text__title">Доверьте свою улыбку профессионалам!</h2>
+
+      <p class="main-text__description">Представляем первую в Самаре авторскую клинику
+        эстетической стоматологии и косметологии
+        Екатерины Паравиной.</p>
+
+      <div class="sign">
+        <button class="sign__btn">Записаться</button>
+
+        <div class="video-about">
+          <a class="video-about__btn">
+            <img class="video-about__img" src="src/assets/img/watch-video-icon.png" alt="">
+          </a>
+
+          <p class="video-about__text">Смотреть видео о нас</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- </div> -->
   </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
   <!-- Modals -->
-  <div class="modal-overlay"></div>
+  <div class="overlay"></div>
 
   <!-- Send form -->
   <div class="popup-send-form">
@@ -84,8 +84,6 @@
 
     </div>
   </div>
-
-
 
   <!-- Video about -->
   <div class="popup-video-about">
@@ -116,12 +114,6 @@
     </div>
   </div>
 
-
-
-
-
 </body>
-
-<script src="src/js/main.js" type="module"></script>
 
 </html>
