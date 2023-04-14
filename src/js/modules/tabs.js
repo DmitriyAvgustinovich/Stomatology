@@ -1,7 +1,7 @@
 export const tabs = () => {
     const tabsTriggersWrapper = document.querySelector('.tabs__triggers')
-    const tabsTriggers = document.querySelectorAll('.tabs__triggers-item')
-    const tabsContent = document.querySelectorAll('.tab-content')
+    const tabsTriggers = document.querySelectorAll('.tabs__trigger')
+    const tabsContent = document.querySelectorAll('.tabs__content')
 
     const hideTabContent = () => {
         tabsContent.forEach(tab => {
@@ -9,13 +9,13 @@ export const tabs = () => {
         })
 
         tabsTriggers.forEach(activeClass => {
-            activeClass.classList.remove('tabs__triggers-item--active')
+            activeClass.classList.remove('tabs__trigger--active')
         })
     }
 
     const showTabContent = (i = 0) => {
         tabsContent[i].style.display = 'flex'
-        tabsTriggers[i].classList.add('tabs__triggers-item--active')
+        tabsTriggers[i].classList.add('tabs__trigger--active')
     }
 
     hideTabContent()
@@ -24,13 +24,11 @@ export const tabs = () => {
     tabsTriggersWrapper.addEventListener('click', (e) => {
         const target = e.target
 
-        if (target && target.classList.contains('tabs__triggers-item')) {
-            tabsTriggers.forEach((tab, i) => {
-                if (target == tab) {
-                    hideTabContent()
-                    showTabContent(i)
-                }
-            })
-        }
+        tabsTriggers.forEach((tab, i) => {
+            if (target == tab) {
+                hideTabContent()
+                showTabContent(i)
+            }
+        })
     })
 }

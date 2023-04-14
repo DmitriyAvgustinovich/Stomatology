@@ -164,10 +164,11 @@
 }
 
 .tabs__wrapper {
-    margin-top: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
-.tabs__triggers__wrapper {
+.tabs__triggers-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -178,7 +179,7 @@
     border-radius: 12px;
 }
 
-.tabs__triggers-item {
+.tabs__trigger {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 400;
@@ -186,13 +187,13 @@
     padding: 20px;
 }
 
-.tabs__triggers-item--active {
+.tabs__trigger--active {
     background-color: #FAC0AA;
     color: #ffffff;
     border-radius: 12px;
 }
 
-.tab-content {
+.tabs__content {
     margin-top: 40px;
     flex-wrap: wrap;
     justify-content: center;
