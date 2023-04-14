@@ -2,6 +2,11 @@ export const sendData = () => {
 
     const sendForm = document.querySelector('.send-form')
     const message = document.querySelector('.message-box')
+    const sendInputs = document.querySelectorAll('.send-form__input')
+
+    sendInputs.forEach(e => {
+        e.setAttribute('required', true)
+    })
 
     sendForm.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -10,6 +15,13 @@ export const sendData = () => {
         const phone = document.querySelector('#phone').value
 
         const data = { name, phone }
+
+        const maxLengthInput = 10
+
+        if (name.length > maxLengthInput) {
+            message.textContent = `Максимальное допустимое количество символов: ${maxLengthInput}`
+            return
+        }
 
         fetch('https://windows-el7h.onrender.com/api/data', {
             method: 'POST',
@@ -24,7 +36,7 @@ export const sendData = () => {
                 const setTimeClear = () => {
                     setTimeout(() => {
                         message.textContent = ''
-                    }, 3000)
+                    }, 4000)
                 }
 
                 if (response.ok) {
