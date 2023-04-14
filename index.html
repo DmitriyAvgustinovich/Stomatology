@@ -63,7 +63,6 @@
       </div>
     </section>
 
-    <!-- </div> -->
   </main>
 
   <!-- Modals -->
@@ -77,9 +76,10 @@
 
       <form action="#" class="send-form">
         <h2 class="send-form__title">Введите ваше имя и номер телефона</h2>
-        <input class="send-form__input" name="user_name" required type="text" placeholder="Введите ваше имя">
-        <input class="send-form__input" name="user_phone" required type="text" placeholder="Введите телефон">
+        <input class="send-form__input" id="name" name="user_name" type="text" placeholder="Введите ваше имя">
+        <input class="send-form__input" id="phone" name="user_phone" type="number" placeholder="Введите телефон">
         <button class="send-form__btn" name="submit" type="submit">Отправить</button>
+        <p class="message-box"></p>
       </form>
 
     </div>
