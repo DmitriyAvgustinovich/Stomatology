@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto';
+}
+
 .main__wrapper {
     background-color: #8F8986;
     padding: 30px 50px;
@@ -24,7 +28,6 @@
 .adapt-menu__trigger {
     margin-left: 20px;
     font-size: 24px;
-    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     display: none;
@@ -53,9 +56,7 @@
 
 .adapt-menu__item {
     display: block;
-    font-family: 'Roboto';
     font-size: 24px;
-    font-weight: 400;
     color: #000000;
     text-decoration: none;
     margin-bottom: 20px;
@@ -68,9 +69,7 @@
 }
 
 .navbar__list-item {
-    font-family: 'Roboto';
     font-size: 24px;
-    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
 }
@@ -85,7 +84,6 @@
 
 .main-text__title {
     max-width: 700px;
-    font-family: 'Roboto';
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
@@ -94,9 +92,7 @@
 .main-text__description {
     margin-top: 30px;
     max-width: 500px;
-    font-family: 'Roboto';
     font-size: 20px;
-    font-weight: 400;
     color: #ffffff;
 }
 
@@ -113,9 +109,7 @@
     border-radius: 15px;
     padding: 20px 40px;
     border: 0;
-    font-family: 'Roboto';
     font-size: 20px;
-    font-weight: 400;
     color: #ffffff;
 }
 
@@ -130,9 +124,7 @@
 }
 
 .video-about__text {
-    font-family: 'Roboto';
     font-size: 20px;
-    font-weight: 400;
     color: #ffffff;
 }
 
@@ -142,9 +134,7 @@
 
 .services__title {
     text-align: center;
-    font-family: 'Roboto';
     font-size: 24px;
-    font-weight: 400;
     color: #4C5056;
 }
 
@@ -157,9 +147,7 @@
     width: 70%;
     margin-top: 20px;
     text-align: center;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #4C5056;
 }
 
@@ -180,9 +168,7 @@
 }
 
 .tabs__trigger {
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #4C5056;
     padding: 20px;
 }
@@ -212,17 +198,13 @@
 
 .tab-content__title {
     margin-top: 5px;
-    font-family: 'Roboto';
     font-size: 18px;
-    font-weight: 400;
     color: #4C5056;
 }
 
 .tab-content__description {
     margin-top: 5px;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #4C5056;
 }
 
@@ -232,9 +214,7 @@
 
 .faq__title {
     text-align: center;
-    font-family: 'Roboto';
     font-size: 24px;
-    font-weight: 400;
     color: #4C5056;
 }
 
@@ -256,9 +236,7 @@
     border-bottom: 2px dashed #949596;
     padding: 10px;
     margin: 20px 0;
-    font-family: 'Roboto';
     font-size: 20px;
-    font-weight: 400;
     color: #4C5056;
     display: flex;
     align-items: center;
@@ -273,9 +251,7 @@
 
 .accordion__description {
     transition: all 0.3s linear;
-    font-family: 'Roboto';
     font-size: 18px;
-    font-weight: 400;
     color: #4C5056;
     height: 0;
     margin-left: 10px;
@@ -322,9 +298,7 @@
 
 .send-form__title {
     margin-top: 20px;
-    font-family: 'Roboto';
     font-size: 20px;
-    font-weight: 400;
     color: #000000;
     text-align: center;
 }
@@ -336,9 +310,7 @@
     border: 0;
     padding: 15px;
     border-radius: 12px;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #ffffff;
 }
 
@@ -352,17 +324,13 @@
     border: 0;
     padding: 15px;
     border-radius: 12px;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #ffffff;
 }
 
 .message-box {
     margin-top: 20px;
-    font-family: 'Roboto';
     font-size: 16px;
-    font-weight: 400;
     color: #000000;
 }
 
@@ -395,9 +363,7 @@
 
 .popup-video-about__title {
     margin: 20px 0;
-    font-family: 'Roboto';
     font-size: 24px;
-    font-weight: 400;
     color: #000000;
 }
 
