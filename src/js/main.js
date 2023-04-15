@@ -1,4 +1,4 @@
-import { popup, video, menu, sendData, tabs } from './modules'
+import { popup, video, menu, sendData, tabs, accordions } from './modules'
 
 window.addEventListener('DOMContentLoaded', () => {
     popup()
@@ -6,4 +6,5 @@ window.addEventListener('DOMContentLoaded', () => {
     menu()
     sendData()
     tabs()
+    accordions()
 })
