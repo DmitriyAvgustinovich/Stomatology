@@ -1,14 +1,18 @@
 export const accordions = () => {
-    const accordionTriggers = document.querySelectorAll('.accordion__trigger')
-    const accordionContent = document.querySelectorAll('.accordion__content')
+    const accordionWrapper = document.querySelectorAll('.accordion__wrapper')
 
-    const showAccordionContent = (i = 0) => {
-        accordionContent[i].classList.toggle('accordion__content--active')
-    }
+    accordionWrapper.forEach((item) => {
+        const accordionTrigger = item.querySelector('.accordion__trigger')
 
-    accordionTriggers.forEach((trigger, i) => {
-        trigger.addEventListener('click', () => {
-            showAccordionContent(i)
+        accordionTrigger.addEventListener('click', () => {
+            item.classList.toggle('open')
+
+            const accordionDescription = item.querySelector('.accordion__description')
+            if (item.classList.contains('open')) {
+                accordionDescription.style.height = `${accordionDescription.scrollHeight}px`
+            } else {
+                accordionDescription.style.height = '0px'
+            }
         })
     })
 }
