@@ -226,6 +226,68 @@
     color: #4C5056;
 }
 
+.faq {
+    margin: 40px 20px;
+}
+
+.faq__title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    color: #4C5056;
+}
+
+.faq__title span {
+    color: #FAC0AA;
+}
+
+.accordion {
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.accordion__trigger {
+    border-bottom: 2px dashed #949596;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    color: #4C5056;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion__trigger::after {
+    content: '+';
+    margin-left: auto;
+
+}
+
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin: 0px 0px 20px 10px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    color: #4C5056;
+}
+
+.accordion__content--active {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+}
+
+.accordion__content span {
+    margin-top: 20px;
+    display: block;
+}
+
 /* Modals */
 .popup--open {
     overflow: hidden;
