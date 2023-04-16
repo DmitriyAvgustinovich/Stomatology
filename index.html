@@ -14,7 +14,7 @@
 
 <body>
 
-  <main class="main main__wrapper">
+  <main class="main main__wrapper" id="about">
     <nav class="navbar navbar__wrapper">
 
       <img class="navbar__logo" src="src/assets/img/logo.png" alt="">
@@ -27,18 +27,18 @@
 
           <a class="adapt-menu__trigger adapt-menu__trigger--close">☰</a>
 
-          <a href="" class="adapt-menu__item">О клинике</a>
-          <a href="" class="adapt-menu__item">Акции</a>
-          <a href="" class="adapt-menu__item">Цены</a>
+          <a class="adapt-menu__item" href="#about">О клинике</a>
+          <a class="adapt-menu__item" href="#promotions">Акции</a>
+          <a class="adapt-menu__item" href="#prices">Цены</a>
 
         </div>
       </div>
 
 
       <div class="navbar__list">
-        <a class="navbar__list-item navbar__list-item--active" href="">О клинике</a>
-        <a class="navbar__list-item" href="">Акции</a>
-        <a class="navbar__list-item" href="">Цены</a>
+        <a class="navbar__list-item navbar__list-item--active" href="#about">О клинике</a>
+        <a class="navbar__list-item" href="#promotions">Акции</a>
+        <a class="navbar__list-item" href="#prices">Цены</a>
       </div>
     </nav>
 
@@ -187,6 +187,7 @@
     </div>
   </section>
 
+  <div id="prices"></div>
   <section class="faq">
     <h2 class="faq__title">Часто задаваемые <span>вопросы</span></h2>
 
@@ -355,7 +356,57 @@
     </div>
   </section>
 
-  <!-- Modals -->
+  <div id="promotions"></div>
+  <section class="promotions">
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-1.png">
+      <p class="promotion__description"><span>Бесплатное применение</span> дентального
+        микроскопа при терапевтическом
+        лечении зубов</p>
+      <button class="promotion__btn promotion__btn--1">Подробнее</button>
+    </div>
+
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-2.png">
+      <p class="promotion__description"><span>Скидка 1000 рублей</span> на традиционную
+        чистку полости рта при приобретении
+        сертификата</p>
+      <button class="promotion__btn promotion__btn--2">Подробнее</button>
+    </div>
+
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-3.png">
+      <p class="promotion__description">Прием специалиста <span>в подарок</span>
+        всем родителям</p>
+      <button class="promotion__btn promotion__btn--3">Подробнее</button>
+    </div>
+
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-4.png">
+      <p class="promotion__description"><span>Эксклюзивные цены</span>
+        на профессиональную гигиену
+        с профилактикой кариеса
+        в честь 8 марта</p>
+      <button class="promotion__btn promotion__btn--4">Подробнее</button>
+    </div>
+
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-5.png">
+      <p class="promotion__description">Специальные условия
+        на оплату услуг: <span>ДМС и рассрочка</span></p>
+      <button class="promotion__btn promotion__btn--5">Подробнее</button>
+    </div>
+
+    <div class="promotion__item">
+      <img class="promotion__img" src="src/assets/img/promotions/promotion-img-6.png">
+      <p class="promotion__description"><span>Скидка 30 000 рублей</span>
+        на инновационную
+        процедуру протезирования зубов</p>
+      <button class="promotion__btn promotion__btn--6">Подробнее</button>
+    </div>
+  </section>
+
+  <!-- Popups -->
   <div class="overlay"></div>
 
   <!-- Send form -->
@@ -402,6 +453,132 @@
       </div>
 
     </div>
+  </div>
+
+  <!-- Promotion -->
+  <div class="promotion-popup promotion-popup--1">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Бесплатное применение дентального микроскопа
+      при терапевтическом лечении зубов</h5>
+    <p class="promotion-popup__description">Забудьте о дополнительных расходах! Запишитесь в клинику «Паравина» и
+      получите
+      скидку 100% на использование микроскопа при лечении кариеса, лечении каналов,
+      проведении профгигиены
+      и так далее.
+
+      <span>Специалисты нашей стоматологии используют самые прогрессивные методы
+        диагностики и лечения полости рта и зубов, поэтому все терапевтические процедуры
+        выполняются с помощью дентального микроскопа. Применение прибора позволяет
+        врачу быстро и эффективно разобраться с проблемой и даже спасти зубы от
+        необходимости удаления.</span>
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
+  </div>
+
+  <div class="promotion-popup promotion-popup--2">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Прием специалиста в подарок всем родителям</h5>
+    <p class="promotion-popup__description">Развеиваем детский миф о том, что ходить к стоматологам страшно! Дарим
+      отличную
+      возможность показать малышу личный пример безопасного взаимодействия
+      с зубным врачом.
+
+      <span>Запишите ребенка на прием или лечение в клинику и получите консультацию
+        специалиста для себя БЕСПЛАТНО!</span>
+
+      <span>В присутствии маленького пациента врач бережно проведет вам осмотр, даст
+        необходимые рекомендации и ответит на все возникающие вопросы.</span>
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
+  </div>
+
+  <div class="promotion-popup promotion-popup--3">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Специальные условия на оплату услуг: ДМС и рассрочка</h5>
+    <p class="promotion-popup__description">Мы заботимся о материальном комфорте своих пациентов и предоставляем
+      возможность пройти качественное стоматологическое лечение в рассрочку
+      или по полису ДМС страховых компаний АО «СОГАЗ» и ПАО «Группа Ренессанс
+      Страхование».
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
+  </div>
+
+  <div class="promotion-popup promotion-popup--4">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Скидка 1000 рублей на традиционную чистку полости рта
+      при приобретении сертификата</h5>
+    <p class="promotion-popup__description">Порадуйте себя или близких людей полезным подарком! Позаботьтесь о здоровье
+      зубов и красоте улыбки с выгодой для своего кошелька.
+
+      <span>Уникальное предложение в клинике «Паравина»! Мы снизили стоимость покупки
+        подарочного сертификата с услугой классического снятия зубных отложений.
+        Теперь стоимость традиционной чистки полости рта составляет 3500 рублей
+        вместо 4500.</span>
+
+      <span>Процедура включает:</span>
+      <span>чистку методом Air Flow;</span>
+      <span>ультразвуковую чистку;</span>
+      <span>полировку пастой;</span>
+      <span>обучение гигиене полости рта;</span>
+      <span>подбор средств гигиены.</span>
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
+  </div>
+
+  <div class="promotion-popup promotion-popup--5">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Эксклюзивные цены на профессиональную гигиену
+      с профилактикой кариеса в честь 8 марта</h5>
+    <p class="promotion-popup__description">Забудьте о дополнительных расходах! Запишитесь в клинику «Паравина» и
+      получите
+      скидку 100% на использование микроскопа при лечении кариеса, лечении каналов,
+      проведении профгигиены
+      и так далее.
+
+      <span>Специалисты нашей стоматологии используют самые прогрессивные методы
+        диагностики и лечения полости рта и зубов, поэтому все терапевтические процедуры
+        выполняются с помощью дентального микроскопа. Применение прибора позволяет
+        врачу быстро и эффективно разобраться с проблемой и даже спасти зубы от
+        необходимости удаления.</span>
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
+  </div>
+
+  <div class="promotion-popup promotion-popup--6">
+    <button type="button" class="popup-close">&times;</button>
+
+    <h5 class="promotion-popup__title">Скидка 30 000 рублей на инновационную процедуру
+      протезирования зубов</h5>
+    <p class="promotion-popup__description">Забудьте о дополнительных расходах! Запишитесь в клинику «Паравина» и
+      получите
+      скидку 100% на использование микроскопа при лечении кариеса, лечении каналов,
+      проведении профгигиены
+      и так далее.
+
+      <span>Специалисты нашей стоматологии используют самые прогрессивные методы
+        диагностики и лечения полости рта и зубов, поэтому все терапевтические процедуры
+        выполняются с помощью дентального микроскопа. Применение прибора позволяет
+        врачу быстро и эффективно разобраться с проблемой и даже спасти зубы от
+        необходимости удаления.</span>
+
+      <span>Позвоните, чтобы узнать подробности акции у администраторов.</span>
+    </p>
+    <p class="promotion__deadline">Акция действует до 30 апреля 2023 года.</p>
   </div>
 
 </body>
