@@ -27,8 +27,34 @@ export const menu = () => {
                 menuClose()
             }
         });
-
     }
 
     bindMenu('.adapt-menu__trigger', '.adapt-menu__trigger--close', '.adapt-menu')
+
+    const activeLinkWrapper = document.querySelector('.navbar__list')
+    const activeLink = document.querySelectorAll('.navbar__list-item')
+
+    const addActiveClass = (i = 0) => {
+        activeLink[i].classList.add('navbar__list-item--active')
+    }
+
+    const deleteActiveClass = () => {
+        activeLink.forEach(e => {
+            e.classList.remove('navbar__list-item--active')
+        })
+    }
+
+    deleteActiveClass()
+    addActiveClass()
+
+    activeLinkWrapper.addEventListener('click', (e) => {
+        const target = e.target
+
+        activeLink.forEach((link, i) => {
+            if (target == link) {
+                deleteActiveClass()
+                addActiveClass(i)
+            }
+        })
+    })
 }
